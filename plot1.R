@@ -7,6 +7,6 @@ required_index<-datafile[,1] %in% c("1/2/2007","2/2/2007")
 global_active<-as.numeric(datafile[required_index,2])
 ##Plot the histogram in png
 png("plot1.png",width=480,height=480)
-hist(global_active,main="Global Active Power",xlab="Global Active Power (kilowatts)")
+hist(global_active,main="Global Active Power",xlab="Global Active Power (kilowatts)",col="red")
 dev.off()
 
